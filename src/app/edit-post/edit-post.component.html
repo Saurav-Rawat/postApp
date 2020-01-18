@@ -1,0 +1,39 @@
+<div fxFlex="100">
+  <form [formGroup]="postForm" fxFlex="100" fxLayout="column">
+    <div fxLayoutAlign="center center" class="my-40">{{ headerText }}</div>
+    <div fxLayoutAlign="center center">
+      <mat-form-field>
+        <input
+          formControlName="title"
+          matInput
+          placeholder="Post Title"
+          required
+        />
+      </mat-form-field>
+    </div>
+    <div fxLayoutAlign="center center">
+      <mat-form-field>
+        <input
+          formControlName="body"
+          matInput
+          placeholder="Enter Your Post Here"
+          required
+        />
+      </mat-form-field>
+    </div>
+    <div class="my-10">
+      <span fxLayout="row wrap" fxLayoutAlign="space-evenly">
+        <span fxFlex="30">
+          <button mat-raised-button (click)="onSaveClick()" color="primary">
+            {{ key }}
+          </button></span
+        >
+        <span fxFlex="30">
+          <button mat-raised-button (click)="onCancelClick()" color="warn">
+            Cancel
+          </button></span
+        >
+      </span>
+    </div>
+  </form>
+</div>

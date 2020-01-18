@@ -1,0 +1,17 @@
+<div fxLayout="column">
+  <span class="confirmation-text"
+    >Are You Sure You Want To Delete This Post?</span
+  >
+  <span fxLayout="row wrap" fxLayoutAlign="space-evenly">
+    <span fxFlex="30">
+      <button mat-raised-button (click)="onYesClick()" color="primary">
+        Yes
+      </button></span
+    >
+    <span fxFlex="30">
+      <button mat-raised-button (click)="oNoClick()" color="warn">
+        NO
+      </button></span
+    >
+  </span>
+</div>
