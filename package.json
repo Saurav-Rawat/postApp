@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d dist"
+    "deploy": "ng build --prod --base-href='https://Saurav-Rawat.github.io/postApp/' && ngh"
   },
   "private": true,
   "homepage": "https://Saurav-Rawat.github.io/postApp",
